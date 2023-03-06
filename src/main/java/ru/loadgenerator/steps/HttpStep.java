@@ -5,7 +5,7 @@ import ru.loadgenerator.credentials.HttpCredentials;
 
 import java.util.logging.Logger;
 
-public class HttpStep implements Runnable{
+public class HttpStep extends Step implements Runnable{
 
     HttpClient httpClient;
     HttpCredentials httpCredentials;
