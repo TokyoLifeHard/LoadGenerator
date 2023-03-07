@@ -15,6 +15,10 @@ public class Config {
         this.configElements.add(configElement);
     }
 
+    public ArrayList<ConfigElement> getConfigElements() {
+        return configElements;
+    }
+
     @Override
     public String toString() {
         return "Config{" +
