@@ -2,21 +2,22 @@ package ru.loadgenerator;
 
 
 import ru.loadgenerator.steps.HttpStep;
+import ru.loadgenerator.steps.Step;
 
 import java.util.List;
 
 public class TestPlan {
-    List<HttpStep> httpSteps;
+    List<Step> steps;
 
-    public TestPlan(List<HttpStep> httpSteps) {
-        this.httpSteps = httpSteps;
+    public TestPlan(List<Step> steps) {
+        this.steps = steps;
     }
 
-    public List<HttpStep> getHttpSteps() {
-        return httpSteps;
+    public List<Step> getHttpSteps() {
+        return steps;
     }
 
-    public void setHttpSteps(List<HttpStep> httpSteps) {
-        this.httpSteps = httpSteps;
+    public void setHttpSteps(List<Step> steps) {
+        this.steps = steps;
     }
 }
