@@ -1,6 +1,5 @@
 package ru.loadgenerator;
 
-
 import ru.loadgenerator.steps.HttpStep;
 import ru.loadgenerator.steps.Step;
 
