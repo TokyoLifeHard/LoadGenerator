@@ -1,4 +1,4 @@
-package ru.loadgenerator;
+package ru.loadgenerator.testplan;
 
 import ru.loadgenerator.steps.HttpStep;
 import ru.loadgenerator.steps.Step;

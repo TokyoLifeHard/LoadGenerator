@@ -1,11 +1,10 @@
-import ru.loadgenerator.TestPlan;
-import ru.loadgenerator.TestPlanFactory;
+import ru.loadgenerator.testplan.TestPlan;
+import ru.loadgenerator.testplan.TestPlanFactory;
 import ru.loadgenerator.config.Config;
 import ru.loadgenerator.config.ConfigReader;
 import ru.loadgenerator.steps.Step;
 
 import java.util.List;
-import java.util.concurrent.*;
 
 
 public class Main {

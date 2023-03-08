@@ -1,4 +1,4 @@
-package ru.loadgenerator;
+package ru.loadgenerator.testplan;
 
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.http.HttpMethod;
