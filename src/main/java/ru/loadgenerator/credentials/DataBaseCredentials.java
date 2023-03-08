@@ -7,6 +7,10 @@ public class DataBaseCredentials {
     String user;
     String password;
     String query;
+
+    public DataBaseCredentials() {
+    }
+
     private DataBaseCredentials(Builder builder) {
         this.dataBaseType = builder.dataBaseType;
         this.dataBaseName = builder.dataBaseName;
