@@ -44,4 +44,11 @@ public class JdbcStep extends Step implements Runnable{
         }
         return rs;
     }
+
+    @Override
+    public String toString() {
+        return "JdbcStep{" +
+                "dataBaseCredentials=" + dataBaseCredentials +
+                '}';
+    }
 }

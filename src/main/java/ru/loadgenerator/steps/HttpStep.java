@@ -34,4 +34,12 @@ public class HttpStep extends Step implements Runnable{
     public void run() {
         execute();
     }
+
+    @Override
+    public String toString() {
+        return "HttpStep{" +
+                "httpClient=" + httpClient +
+                ", httpCredentials=" + httpCredentials +
+                '}';
+    }
 }

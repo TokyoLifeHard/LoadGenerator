@@ -123,4 +123,17 @@ public class DataBaseCredentials {
     public void setQuery(String query) {
         this.query = query;
     }
+
+    @Override
+    public String toString() {
+        return "DataBaseCredentials{" +
+                "dataBaseType='" + dataBaseType + '\'' +
+                ", dataBaseName='" + dataBaseName + '\'' +
+                ", host='" + host + '\'' +
+                ", port='" + port + '\'' +
+                ", user='" + user + '\'' +
+                ", password='" + password + '\'' +
+                ", query='" + query + '\'' +
+                '}';
+    }
 }
