@@ -13,11 +13,11 @@ public class TestPlan {
         this.steps = steps;
     }
 
-    public List<Step> getHttpSteps() {
+    public List<Step> getSteps() {
         return steps;
     }
 
-    public void setHttpSteps(List<Step> steps) {
+    public void setSteps(List<Step> steps) {
         this.steps = steps;
     }
 }
