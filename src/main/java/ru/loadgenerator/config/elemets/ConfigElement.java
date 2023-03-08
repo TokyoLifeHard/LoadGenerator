@@ -13,4 +13,8 @@ public class ConfigElement {
     public void setTypeElement(String typeElement) {
         this.typeElement = typeElement;
     }
+
+    public String getTypeElement() {
+        return typeElement;
+    }
 }

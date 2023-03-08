@@ -14,6 +14,9 @@ public class HttpCredentials {
 
     private Map<String,String> params;
 
+    public HttpCredentials() {
+    }
+
     public HttpCredentials(String url, HttpMethod httpMethod, String agent, String body) {
         this.url = url;
         this.httpMethod = httpMethod;
