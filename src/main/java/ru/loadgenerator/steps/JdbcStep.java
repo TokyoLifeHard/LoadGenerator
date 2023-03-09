@@ -3,8 +3,9 @@ package ru.loadgenerator.steps;
 import ru.loadgenerator.credentials.DataBaseCredentials;
 
 import java.sql.*;
+import java.util.concurrent.Callable;
 
-public class JdbcStep extends Step implements Runnable{
+public class JdbcStep extends Step implements Callable<ResultSet> {
     DataBaseCredentials dataBaseCredentials;
 
     public JdbcStep(DataBaseCredentials dataBaseCredentials) {
@@ -12,7 +13,7 @@ public class JdbcStep extends Step implements Runnable{
     }
 
     @Override
-    public void execute() {
+    public ResultSet execute() {
         ResultSet rs = executeQuery();
         System.out.println(rs.toString());
         try {
@@ -20,11 +21,12 @@ public class JdbcStep extends Step implements Runnable{
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return rs;
     }
 
     @Override
-    public void run() {
-        execute();
+    public ResultSet call() throws Exception {
+        return execute();
     }
 
     private Connection createConnecton() throws SQLException {
