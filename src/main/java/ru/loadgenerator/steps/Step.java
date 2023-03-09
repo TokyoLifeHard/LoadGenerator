@@ -1,5 +1,7 @@
 package ru.loadgenerator.steps;
 
-public abstract class Step {
+import java.util.concurrent.Callable;
+
+public abstract class Step implements Callable<Object> {
     public abstract <T> T execute();
 }

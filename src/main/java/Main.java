@@ -1,3 +1,4 @@
+import ru.loadgenerator.loadrunner.LoadRunner;
 import ru.loadgenerator.testplan.TestPlan;
 import ru.loadgenerator.testplan.TestPlanFactory;
 import ru.loadgenerator.config.Config;
@@ -21,9 +22,9 @@ public class Main {
         for (Step step : steps) {
             System.out.println(step.toString());
         }
-        ExecutorService executorService = Executors.newScheduledThreadPool(2);
-        ExecutorService executorService1 = Executors.newFixedThreadPool(2);
 
+        LoadRunner lr = new LoadRunner(Executors.newScheduledThreadPool(2),steps);
 
+        lr.run();
     }
 }

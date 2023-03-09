@@ -5,7 +5,7 @@ import ru.loadgenerator.credentials.HttpCredentials;
 
 import java.util.concurrent.Callable;
 
-public class HttpStep extends Step implements Callable<String> {
+public class HttpStep extends Step {
 
     HttpClient httpClient;
     HttpCredentials httpCredentials;

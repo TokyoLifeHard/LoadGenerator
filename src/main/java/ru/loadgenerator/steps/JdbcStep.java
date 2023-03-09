@@ -5,7 +5,7 @@ import ru.loadgenerator.credentials.DataBaseCredentials;
 import java.sql.*;
 import java.util.concurrent.Callable;
 
-public class JdbcStep extends Step implements Callable<ResultSet> {
+public class JdbcStep extends Step {
     DataBaseCredentials dataBaseCredentials;
 
     public JdbcStep(DataBaseCredentials dataBaseCredentials) {
