@@ -5,6 +5,8 @@ import ru.loadgenerator.config.ConfigReader;
 import ru.loadgenerator.steps.Step;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 public class Main {
@@ -19,6 +21,9 @@ public class Main {
         for (Step step : steps) {
             System.out.println(step.toString());
         }
+        ExecutorService executorService = Executors.newScheduledThreadPool(2);
+        ExecutorService executorService1 = Executors.newFixedThreadPool(2);
+
 
     }
 }
